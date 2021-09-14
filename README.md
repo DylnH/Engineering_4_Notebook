@@ -5,4 +5,16 @@ Dylan Hensley's Engineering 4 Notebook
 
 ### Hello Python
 
-![image](https://user-images.githubusercontent.com/57632909/133272074-4624361f-b500-4a31-9a80-dd20898a4b0d.png)
+# Automatic Dice Roller
+
+# Written by [Dylan J. Hensley]
+
+print ("🎲Automatic Dice Roller🎲:") # Title
+
+import random
+roll_dice = input("🎲Roll The Dice ⬇") # Telling you to Roll the Dice
+
+if roll_dice == "Roll": # What you write to roll the Dice
+   posiblle_results = [6, 5, 4, 3, 2, 1] # possible outcomes
+   result = random.choice(posiblle_results) # Picks out a random number
+   print("You rolled a... " + str(result)) # Tells you the random number
