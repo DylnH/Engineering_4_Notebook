@@ -25,6 +25,10 @@ ________________________________________________________________________________
 ### Python Program 01 – Calculator (Hello Functions)
    
    ``` python
+# Kalculator
+
+# Written by [Dylan J. Hensley]
+   
 def add(x, y): # adds two numbers
     return x + y
 def subtract(x, y): # subtracts two numbers
