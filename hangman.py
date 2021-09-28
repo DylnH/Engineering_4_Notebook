@@ -1,3 +1,9 @@
+#hangboy
+
+#Written by Dylan J. Hensley
+
+
+
 import time
 
 wrongArr = ["________	",
