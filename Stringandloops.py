@@ -1,3 +1,8 @@
+# Loops and string
+
+# Written by Dylan J. Hensley
+
+
 import numpy 
 
 txt = input("Write somethin' ")
