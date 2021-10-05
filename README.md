@@ -53,19 +53,3 @@ N/A
 ### Reflection
 
 This assignment was relatively simple, but was challenging because I had not coded in Python for several months. I learned that I could import parts of toolboxes without importing the entire thing, but that changes the syntax of how I call the function later. I also learned about using a while loop to control whether a user wants to exit the program. For the spicy version, I needed to use nested loops. Python determines what is inside a loop by the indent level of each line of text, rather than brackets like some other coding styles. That means I need to be really careful with my tabs!
-
-
-## Python_Calculator
-
-### Assignment Description
-
-Your turn! You will be writing a section of readme like this for all subsequent assignments.
-
-### Evidence 
-
-
-### Wiring
-
-
-### Reflection
-
