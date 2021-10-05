@@ -1,11 +1,6 @@
 # Engineering_4_Notebook
 Dylan Hensley's Engineering 4 Notebook
 
-# Engineering_4_Notebook
-This repository will actually serve as a aid to help you get started with your own template.  You should copy the raw form of this readme into your own, and use this template to write your own.
-
-I didn't ask you to document hello_world.py or dice_roller.py. I'll start off with an example for dice_roller.py, and then you will reflect on calculator.py.
-
 ## Table of Contents
 * [Basics](#Basics)
 * [Python_Dice_Roller](#PythonDiceRoller)
