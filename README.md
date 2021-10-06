@@ -13,6 +13,8 @@ In this assignment, we created a number generator that would pick a random numbe
  
 <details><summary>Dice Roller</summary>
  
+ ``` python
+ 
  # Automatic Dice Roller
 
 # Written by [Dylan J. Hensley]
@@ -29,7 +31,8 @@ while roll_again == "":
         result = random.choice(posiblle_results) # Picks out a random number
         print("You rolled a... " + str(result)) # Tells you the random number
     roll_again = input("X to exit / Enter to Roll again🎲")
- 
+
+```
 </details>
 <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-05%209.55.41%20PM.png?raw=true" alt="Screenshot 2021-10-05 9.55.41 PM.png"/>
  
