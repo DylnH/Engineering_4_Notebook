@@ -2,9 +2,8 @@
 Dylan Hensley's Engineering 4 Notebook
 
 ## Table of Contents
-* [Basics](#Basics)
-* [Python_Dice_Roller](#PythonDiceRoller)
-* [Python_Calculator](#Python_Calculator)
+* [Dice_Roller](Dice Roller)
+* [Calculator](#Python_Calculator)
 ---
 
 <img src="Screenshot%20(3).png?raw=true" width="400">
