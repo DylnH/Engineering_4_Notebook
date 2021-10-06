@@ -16,10 +16,10 @@ def doMath(x,y,z):
 
 while True:
 
-        x = float(input("Enter 1st number: "))
-        y = float(input("Enter 2nd number: "))
+        x = float(input("Enter 1st number: ")) #type in first input
+        y = float(input("Enter 2nd number: ")) #type in second input
 
-        print("Sum:        ", doMath(x,y,1))
+        print("Sum:        ", doMath(x,y,1)) #print out every possible outcome
         print("Difference: ", doMath(x,y,2))
         print("Product:    ", doMath(x,y,3))
         print("Quotient:   ", doMath(x,y,4))
