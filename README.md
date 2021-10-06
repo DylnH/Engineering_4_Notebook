@@ -11,6 +11,26 @@ In this assignment, we created a number generator that would pick a random numbe
 
 ### Evidence 
  
+<details><summary>Dice Roller</summary>
+ 
+ # Automatic Dice Roller
+
+# Written by [Dylan J. Hensley]
+
+print ("🎲Automatic Dice Roller🎲:") # Title
+
+import random
+roll_again = ""
+while roll_again == "":
+    roll_dice = input("🎲Roll The Dice ⬇") # Telling you to Roll the Dice
+
+    if roll_dice == "Roll": # What you write to roll the Dice
+        posiblle_results = [6, 5, 4, 3, 2, 1] # possible outcomes
+        result = random.choice(posiblle_results) # Picks out a random number
+        print("You rolled a... " + str(result)) # Tells you the random number
+    roll_again = input("X to exit / Enter to Roll again🎲")
+ 
+</details>
 <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-05%209.55.41%20PM.png?raw=true" alt="Screenshot 2021-10-05 9.55.41 PM.png"/>
  
  Onces you start, Type in "Roll" and Taa Daa, you should get a number between 1-6. Then if you want to roll again, press "enter", if not, "X"
