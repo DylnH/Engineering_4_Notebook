@@ -4,7 +4,6 @@
 <details><summary>Dice Roller</summary>
  
 ## Dice Roller
-You can delete this section from your own personal readme. 
 
 ### Assignment Description
 
