@@ -3,15 +3,15 @@
 
 #Written by: Dylan J. Hensley
 
-def quadCalc(a,b,c): 
-  intA = int(a) 
+def quadCalc(a,b,c): # quadCalc = do quadratic/advanced math calculations
+  intA = int(a)
   intB = int(b) 
   intC = int(c) 
   disc = ((intB*intB)-(4*intA*intC)) 
   Q1 = (-intB / (2*intA))
-  if disc < 0: 
+  if disc < 0: # if disc < 0 = calculate, then if answer is determind to have no real roots,print
     return("no real roots.".format(intA, intB, intC))
-  if disc == 0:
+  if disc == 0: # if disc == 0 = calculate, then if answer is determind to have real roots,print
     return("The root =: {0}".format(Q1)) 
   if disc > 0: 
     pos = ((disc**0.5)/(2*intA)) 
