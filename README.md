@@ -97,7 +97,7 @@ while True:
  
 </details>
  
-<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-05%209.55.41%20PM.png?raw=true" alt="Screenshot 2021-10-05 9.55.41 PM.png"/>
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-05%2010.40.39%20PM.png?raw=true" alt="Screenshot 2021-10-05 10.40.39 PM.png"/>
  
  Onces you start, Type in one number, then the second, and you'll get 5 different outcomes (addition,subraction,multiplication,division,moduli)
 
