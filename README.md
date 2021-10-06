@@ -1,11 +1,9 @@
 # Engineering_4_Notebook
 ## Dylan Hensley's Engineering 4 Notebook
-
-<img src="Screenshot%20(3).png?raw=true" width="400">
  
 <details><summary>Dice Roller</summary>
  
-## Basics
+## Dice Roller
 You can delete this section from your own personal readme. 
 
 ### Assignment Description
