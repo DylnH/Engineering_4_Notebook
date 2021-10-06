@@ -47,6 +47,6 @@ N/A
  
 ### Reflection
 
-The assignment wasn't hard at all, however, it was SO hard to follow Mr Miller's demands. Eventhough my code was working, he made me redo it over and over and over again, because I didn't "follow intructions". What kind of monster makes you do that??? Anyway, if you want to do this assignment, look at the for the .py file in my readme.Personally, feel like I understand things more when I get to see it write in front of my face.
+The assignment wasn't hard at all, however, it was SO hard to follow Mr Miller's demands. Eventhough my code was working, he made me redo it over and over and over again, because I didn't "follow intructions". What kind of monster does that??? Anyway, if you want to do this assignment, look at the for the .py file in my readme.Personally, feel like I understand things more when I get to see it write in front of my face.
  
 </details>
