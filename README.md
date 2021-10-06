@@ -11,7 +11,8 @@ In this assignment, we created a number generator that would pick a random numbe
 
 ### Evidence 
  
-<details><summary>Dice Roller</summary>
+<details><summary>Code</summary>
+ 
  
  ``` python
  
@@ -33,7 +34,9 @@ while roll_again == "":
     roll_again = input("X to exit / Enter to Roll again🎲")
 
 ```
+ 
 </details>
+ 
 <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-05%209.55.41%20PM.png?raw=true" alt="Screenshot 2021-10-05 9.55.41 PM.png"/>
  
  Onces you start, Type in "Roll" and Taa Daa, you should get a number between 1-6. Then if you want to roll again, press "enter", if not, "X"
