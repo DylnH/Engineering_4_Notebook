@@ -66,22 +66,33 @@ In this assignment, we created a number generator that would pick a random numbe
  
  ``` python
  
- # Automatic Dice Roller
+ # Kalculator
 
 # Written by [Dylan J. Hensley]
 
-print ("🎲Automatic Dice Roller🎲:") # Title
+def doMath(x,y,z):
+    if(z==1):#addition
+        return x + y
+    if(z==2):#subtraction
+         return x - y
+    if(z==3):#mulitplication
+         return x * y
+    if(z==4):#division
+         return round(x / y, 2)
+    if(z==5):#modulo
+         return x % y
 
-import random
-roll_again = ""
-while roll_again == "":
-    roll_dice = input("🎲Roll The Dice ⬇") # Telling you to Roll the Dice
+while True:
 
-    if roll_dice == "Roll": # What you write to roll the Dice
-        posiblle_results = [6, 5, 4, 3, 2, 1] # possible outcomes
-        result = random.choice(posiblle_results) # Picks out a random number
-        print("You rolled a... " + str(result)) # Tells you the random number
-    roll_again = input("X to exit / Enter to Roll again🎲")
+        x = float(input("Enter 1st number: ")) #type in first input
+        y = float(input("Enter 2nd number: ")) #type in second input
+
+        print("Sum:        ", doMath(x,y,1)) #print out possible outcomes
+        print("Difference: ", doMath(x,y,2))
+        print("Product:    ", doMath(x,y,3))
+        print("Quotient:   ", doMath(x,y,4))
+        print("Modulo:     ", doMath(x,y,5))
+        break 
 
 ```
  
