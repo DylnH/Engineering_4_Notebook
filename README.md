@@ -10,8 +10,9 @@
 In this assignment, we created a number generator that would pick a random number from 1-6. For this assignment, we needed to use "import random" which is a function that is used to select random results out of possible outcomes. This assignment, if done correctly, should have relatively clean code and should be really fun to use.
 
 ### Evidence 
+ 
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-05%209.55.41%20PM.png?raw=true" alt="Screenshot 2021-10-05 9.55.41 PM.png"/>![image](https://user-images.githubusercontent.com/57632909/136128703-86c92d6c-d633-4d69-adf8-e64bf642de56.png)
 
-Pictures / Gifs of your work should go here.  You need to communicate what your thing does. For code only assignments like the Python calculator, include a screenshot of the output of the code.
 
 ### Wiring
 
