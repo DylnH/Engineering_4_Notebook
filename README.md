@@ -2,7 +2,7 @@
 Dylan Hensley's Engineering 4 Notebook
 
 ## Table of Contents
-* [Dice_Roller](Dice Roller)
+* [Dice_Roller](#Dice_Roller)
 * [Calculator](#Python_Calculator)
 ---
 
