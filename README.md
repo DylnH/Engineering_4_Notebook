@@ -1,11 +1,6 @@
 # Engineering_4_Notebook
 Dylan Hensley's Engineering 4 Notebook
 
-## Table of Contents
-* [Dice_Roller](#Dice_Roller)
-* [Calculator](#Python_Calculator)
----
-
 <img src="Screenshot%20(3).png?raw=true" width="400">
  
 <details><summary>Dice Roller</summary>
