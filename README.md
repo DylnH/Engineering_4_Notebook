@@ -162,9 +162,9 @@ while True:
  
 </details>
  
-<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-05%209.55.41%20PM.png?raw=true" alt="Screenshot 2021-10-05 9.55.41 PM.png"/>
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-05%2010.58.30%20PM.png?raw=true" alt="Screenshot 2021-10-05 10.58.30 PM.png"/>
  
- Onces you start, Type in "Roll" and Taa Daa, you should get a number between 1-6. Then if you want to roll again, press "enter", if not, "X"
+ Onces you start, Type in one number, then the second, then the third and you'll get your answer. (real roots or no real roots as well)
 
 ### Wiring
 
