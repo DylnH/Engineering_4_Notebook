@@ -11,7 +11,7 @@ In this assignment, we created a number generator that would pick a random numbe
 
 ### Evidence 
  
-<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-05%209.55.41%20PM.png?raw=true" alt="Screenshot 2021-10-05 9.55.41 PM.png"/>![image](https://user-images.githubusercontent.com/57632909/136128703-86c92d6c-d633-4d69-adf8-e64bf642de56.png)
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-05%209.55.41%20PM.png?raw=true"
 
 
 ### Wiring
