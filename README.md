@@ -7,7 +7,7 @@
 
 ### Assignment Description
 
-Write your assignment description here. It should be at least a few sentences.
+In this assignment, we created a number generator that would pick a random number from 1-6.
 
 ### Evidence 
 
