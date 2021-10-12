@@ -185,6 +185,7 @@ In this assignment, we created a number generator that would pick a random numbe
 ### Evidence 
  
  <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-12%20at%203.19.39%20PM.png?raw=true">
+ <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-12%20at%203.20.22%20PM.png?raw=true">
 
  
 <details><summary>Code</summary>
@@ -212,9 +213,7 @@ while roll_again == "":
 ```
  
 </details>
- 
-<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-05%209.55.41%20PM.png?raw=true" alt="Screenshot 2021-10-05 9.55.41 PM.png"/>
- 
+  
  Onces you start, Type in "Roll" and Taa Daa, you should get a number between 1-6. Then if you want to roll again, press "enter", if not, "X"
 
 ### Wiring
