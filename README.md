@@ -184,6 +184,9 @@ In this assignment, we created a number generator that would pick a random numbe
 
 ### Evidence 
  
+ <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-12%20at%203.19.39%20PM.png?raw=true">
+
+ 
 <details><summary>Code</summary>
  
  
