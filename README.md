@@ -175,10 +175,9 @@ N/A
  
 </details>
 
-<details><summary>Dice Roller</summary>
+<details><summary>MSP</summary>
  
-## Dice Roller
-
+## Hangman Game
 ### Assignment Description
 
 In this assignment, we created a number generator that would pick a random number from 1-6. For this assignment, we needed to use "import random" which is a function that is used to select random results out of possible outcomes. This assignment, if done correctly, should have relatively clean code and should be really fun to use.
