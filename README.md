@@ -192,23 +192,61 @@ In this assignment, we created a number generator that would pick a random numbe
  
  
  ``` python
- 
- # Automatic Dice Roller
 
-# Written by [Dylan J. Hensley]
+ #hangboy
 
-print ("🎲Automatic Dice Roller🎲:") # Title
+#Written by Dylan J. Hensley
 
-import random
-roll_again = ""
-while roll_again == "":
-    roll_dice = input("🎲Roll The Dice ⬇") # Telling you to Roll the Dice
 
-    if roll_dice == "Roll": # What you write to roll the Dice
-        posiblle_results = [6, 5, 4, 3, 2, 1] # possible outcomes
-        result = random.choice(posiblle_results) # Picks out a random number
-        print("You rolled a... " + str(result)) # Tells you the random number
-    roll_again = input("X to exit / Enter to Roll again🎲")
+
+import time
+
+wrongArr = ["________	",
+	    "|       |  ",
+            "|       O  ",
+            "|      /|\\",
+            "|      / \\", 
+            "|          ",
+	    "|		"]
+print ("write a word.")
+
+word = input()
+time.sleep(1)
+
+print ("\n" * 50)
+print ("Guess")
+time.sleep(0.5)
+
+guesses = ' '
+turns = len(wrongArr)
+save = turns
+while turns > 0:
+    failed = 0 
+    for char in word:
+        if char in guesses:
+            print (char) 
+
+        else:
+            print ("_")
+            failed += 1
+
+    if failed == 0:
+        print ("You won :)")# if you win, print
+        break
+    print
+    guess = input() 
+    guesses += guess 
+
+    if guess not in word:
+        turns -= 1
+        for i in range(save - turns): 
+       	    print (wrongArr[i])
+        print ("You have", + turns, 'more guesses') # number of guesses
+
+        if turns == 0:
+            print ("You lost (x_x)") # death
+
+    print ("_______________________________")
 
 ```
  
