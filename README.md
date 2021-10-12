@@ -224,9 +224,9 @@ The assignment wasn't hard at all, however, it was SO hard to follow Mr Miller's
  
 </details>
 
-<details><summary>Calculator</summary>
+<details><summary>String and Loop</summary>
  
-## Calculator
+## String and Loop
 
 ### Assignment Description
 
