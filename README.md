@@ -239,3 +239,20 @@ The assignment wasn't hard at all, however, it was SO hard to follow Mr Miller's
  
  ``` python
  
+ # Loops and string
+
+# Written by Dylan J. Hensley
+
+
+import numpy 
+
+txt = input("Write somethin' ")
+
+letters = list(txt)
+array1 = numpy.array(letters) # formats letters vertically
+
+for i in letters:
+    newStr = i.replace(' ', '-')  # instead of space, it a "-"
+    print(newStr)
+ 
+ ```
