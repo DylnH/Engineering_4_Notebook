@@ -174,7 +174,7 @@ N/A
  
 ### Reflection
 
-
+In This assignment, I had some problem with the inputs, however that was just a typo I had that I didn't see. I didn't really have any issues. BUt with any assignment, Looking something up will help you understand what is happening and what you need to do.
  
 </details>
 
