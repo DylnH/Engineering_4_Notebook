@@ -183,7 +183,7 @@ In This assignment, I had some problem with the inputs, however that was just a 
 ## Hangman Game
 ### Assignment Description
 
-In this assignment, we created a number generator that would pick a random number from 1-6. For this assignment, we needed to use "import random" which is a function that is used to select random results out of possible outcomes. This assignment, if done correctly, should have relatively clean code and should be really fun to use.
+In this assignment, we created a hangman game,that can be played by two people. The first player would type in a word, and the game with begin. The second player would guess and a stick figure will gradually form, depending on if the player answers wrong. The concept is pretty staight forward, a standard hangman game. This look a little longer than the rest of the assignments, but thats due to difficulty.
 
 ### Evidence 
  
