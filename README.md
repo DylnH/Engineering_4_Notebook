@@ -7,7 +7,7 @@
 
 ### Assignment Description
 
-In this assignment, we created a number generator that would pick a random number from 1-6. For this assignment, we needed to use "import random" which is a function that is used to select random results out of possible outcomes. This assignment, if done correctly, should have relatively clean code and should be really fun to use.
+In this assignment, we created a number generator that would pick a random number from 1-6. For this assignment, we needed to use "import random" which is a function that is used to select random results out of possible outcomes. The prgram can also be exited out or give you the option to roll again. This assignment, if done correctly, should have relatively clean code and should be really fun to use.
 
 ### Evidence 
  
@@ -57,7 +57,7 @@ The assignment wasn't hard at all, however, it was SO hard to follow Mr Miller's
 
 ### Assignment Description
 
-In this assignment we were tasked to create a calculator that could add, subtracted, multiply ,and divide. The catch however, was to do all that, using only one function. By using "doMath" you are able to "do math" and solve simple math equations.
+In this assignment we were tasked to create a calculator that could add, subtracted, multiply ,and divide. The catch however, was to do all that, using only one function. By using "doMath" you are able to "do math" and solve simple math equations. The program can be exited out of and can give you the option to calculate again. This assignment will nt take you long, if you know which function to use.
 
 ### Evidence 
  
@@ -79,8 +79,6 @@ def doMath(x,y,z):
          return x * y
     if(z==4):#division
          return round(x / y, 2)
-    if(z==5):#modulo
-         return x % y
 
 while True:
 
@@ -91,7 +89,6 @@ while True:
         print("Difference: ", doMath(x,y,2))
         print("Product:    ", doMath(x,y,3))
         print("Quotient:   ", doMath(x,y,4))
-        print("Modulo:     ", doMath(x,y,5))
         break 
 
 ```
@@ -100,13 +97,15 @@ while True:
  
 <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-05%2010.40.39%20PM.png?raw=true" alt="Screenshot 2021-10-05 10.40.39 PM.png"/>
  
- Onces you start, Type in one number, then the second, and you'll get 5 different outcomes (addition,subraction,multiplication,division,moduli)
+ Onces you start, Type in one number, then the second, and you'll get 4 different outcomes (addition,subraction,multiplication,division)
 
 ### Wiring
 
 N/A
  
 ### Reflection
+
+For this assignment, I had a hard time narrowing my code to 1 function. my original code had 4 function (def add, def subtract, def multiply, and def divide). It took me awhile to learn about the doMath function, but after I did, I was able to finish the assignment "properly" (both ways work the same way if you want to make your own calculator).
 
  
 </details>
