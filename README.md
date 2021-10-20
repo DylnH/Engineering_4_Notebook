@@ -116,7 +116,9 @@ For this assignment, I had a hard time narrowing my code to 1 function. my origi
 
 ### Assignment Description
 
-
+This program computes roots of a quadratic equation when coefficients a, b and c are typed by the user. for this assignment I used 
+"def quadCalc" as the main function. I have trouble with Quadratics in reality so coding I thought would be dificult, but is will not be as bad as it may seem.
+	
 ### Evidence 
  
 <details><summary>Code</summary>
