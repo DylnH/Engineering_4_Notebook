@@ -57,6 +57,7 @@ The assignment wasn't hard at all, however, it was SO hard to follow Mr Miller's
 
 ### Assignment Description
 
+In this assignment we were tasked to create a calculator that could add, subtracted, multiply ,and divide. The catch however, was to do all that, using only one function. By using "doMath" you are able to "do math" and solve simple math equations.
 
 ### Evidence 
  
@@ -184,9 +185,8 @@ In this assignment, we created a number generator that would pick a random numbe
 
 ### Evidence 
  
+ <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-12%20at%203.20.22%20PM.png?raw=true">	
  <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-12%20at%203.19.39%20PM.png?raw=true">
- <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-12%20at%203.20.22%20PM.png?raw=true">
-
  
 <details><summary>Code</summary>
  
