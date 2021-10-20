@@ -186,10 +186,7 @@ In This assignment, I had some problem with the inputs, however that was just a 
 In this assignment, we created a hangman game,that can be played by two people. The first player would type in a word, and the game with begin. The second player would guess and a stick figure will gradually form, depending on if the player answers wrong. The concept is pretty staight forward, a standard hangman game. This look a little longer than the rest of the assignments, but thats due to difficulty.
 
 ### Evidence 
- 
- <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-12%20at%203.20.22%20PM.png?raw=true">	
- <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-12%20at%203.19.39%20PM.png?raw=true">
- 
+	
 <details><summary>Code</summary>
  
  
@@ -253,6 +250,10 @@ while turns > 0:
 ```
  
 </details>
+ 
+ <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-12%20at%203.20.22%20PM.png?raw=true">	
+ <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-12%20at%203.19.39%20PM.png?raw=true">
+ 
   
  Onces you start, Type in "Roll" and Taa Daa, you should get a number between 1-6. Then if you want to roll again, press "enter", if not, "X"
 
