@@ -192,7 +192,7 @@ In this assignment, we created a hangman game,that can be played by two people. 
 
 import time
 
-wrongArr = ["________	",
+wrongArr = ["________	", # will print one row for every wromg answer
 	    "|       |  ",
             "|       O  ",
             "|      /|\\",
@@ -201,7 +201,7 @@ wrongArr = ["________	",
 	    "|		"]
 print ("write a word.")
 
-word = input()
+word = input() # Player #1 input setup
 time.sleep(1)
 
 print ("\n" * 50)
@@ -255,8 +255,8 @@ N/A
  
 ### Reflection
 
-The assignment wasn't hard at all, however, it was SO hard to follow Mr Miller's demands. Eventhough my code was working, he made me redo it over and over and over again, because I didn't "follow intructions". What kind of monster does that??? Anyway, if you want to do this assignment, look at the for the .py file in my readme.Personally, feel like I understand things more when I get to see it write in front of my face.
- 
+For this assignment, I had difficulty with the "player input aspect of the assignment. I tried to get away with it by making a random word generator so you can play with yourself,but thats a different project. After I figure that out This helped me solve my issues. (https://inventwithpython.com/invent4thed/chapter8.html).
+	
 </details>
 
 <details><summary>String and Loop</summary>
