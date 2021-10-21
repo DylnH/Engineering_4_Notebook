@@ -304,6 +304,8 @@ N/A
 ### Reflection
 
 The assignment wasn't hard at all, numpy works wonders, It's litterally made for this assignment (or making lists). At first I was a bit confused on what the assignment was asking for and my code had the text printed horizantally but other than that easy fix, this assignment was quick and fun.
+
+</details>
 	
 	
 <details><summary>CAD Swing Arm</summary>
