@@ -264,11 +264,11 @@ For this assignment, I had difficulty with the "player input aspect of the assig
 ## String and Loop
 
 ### Assignment Description
+	
+For this assignment, We were tasked to make a program that would print out sentences were written out by a user. In this assignmnt I used numpy array with is a function that can be used to make compact lists in certain formats in very quick time. by using it, you can get your code to look really clean, because there isn't that much to do.
 
 
 ### Evidence 
- 
- <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%20(15).png?raw=true">
  
 <details><summary>Code</summary>
  
@@ -284,10 +284,12 @@ import numpy
 txt = input("Write somethin' ")
 
 letters = list(txt)
-array1 = numpy.array(letters) # formats letters vertically
+array1 = numpy.array(letters) # formats letters vertically in a list format
 
 for i in letters:
     newStr = i.replace(' ', '-')  # instead of space, it a "-"
     print(newStr)
  
  ```
+ <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%20(15).png?raw=true">
+ 
