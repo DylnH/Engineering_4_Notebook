@@ -294,4 +294,5 @@ for i in letters:
 </details>
 
  <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%20(15).png?raw=true">
+First type out some sentences,words,phrase, anythings for that matter, and press "enter" then your program will print it out vertically.
  
