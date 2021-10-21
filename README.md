@@ -68,8 +68,6 @@ In this assignment we were tasked to create a calculator that could add, subtrac
  
  # Kalculator
 
-# Written by [Dylan J. Hensley]
-
 def doMath(x,y,z):
     if(z==1):#addition
         return x + y
@@ -129,8 +127,6 @@ This program computes roots of a quadratic equation when coefficients a, b and c
 #Quadratic Solver
 
 
-#Written by: Dylan J. Hensley
-
 def quadCalc(a,b,c): # quadCalc = do quadratic/advanced math calculations
   intA = int(a)
   intB = int(b) 
@@ -174,7 +170,7 @@ N/A
  
 ### Reflection
 
-In This assignment, I had some problem with the inputs, however that was just a typo I had that I didn't see. I didn't really have any issues. BUt with any assignment, Looking something up will help you understand what is happening and what you need to do.
+In This assignment, I had some problem with the inputs, however that was just a typo I had that I didn't see. I didn't really have any issues. Also, with any assignment, Looking something up will help you understand what is happening and what you need to do. Additinally follow intructions, At first, I didn't read the desrciption for this assignment and just did my own thing. DON'T. I had to redo this one multiple times because of it.
  
 </details>
 
@@ -193,10 +189,6 @@ In this assignment, we created a hangman game,that can be played by two people. 
  ``` python
 
  #hangboy
-
-#Written by Dylan J. Hensley
-
-
 
 import time
 
