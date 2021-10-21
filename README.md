@@ -297,3 +297,10 @@ for i in letters:
 
 First type out some sentences,words,phrase, anythings for that matter, and press "enter" then your program will print it out vertically.
  
+### Wiring
+
+N/A
+ 
+### Reflection
+
+The assignment wasn't hard at all, numpy works wonders, It's litterally made for this assignment (or making lists). At first I was a bit confused on what the assignment was asking for and my code had the text printed horizantally but other than that easy fix, this assignment was quick and fun.
