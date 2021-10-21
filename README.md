@@ -255,7 +255,7 @@ N/A
  
 ### Reflection
 
-For this assignment, I had difficulty with the "player input aspect of the assignment. I tried to get away with it by making a random word generator so you can play with yourself,but thats a different project. After I figure that out This helped me solve my issues. (https://inventwithpython.com/invent4thed/chapter8.html).
+For this assignment, I had difficulty with the "player input aspect of the assignment. I tried to get away with it by making a random word generator so you can play with yourself,but thats a different project. After I figure that out This helped me solve my issues. [Link to Hangman code](https://inventwithpython.com/invent4thed/chapter8.html)
 	
 </details>
 
