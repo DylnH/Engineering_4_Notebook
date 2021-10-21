@@ -291,5 +291,7 @@ for i in letters:
     print(newStr)
  
  ```
+</details>
+
  <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%20(15).png?raw=true">
  
