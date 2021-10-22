@@ -333,7 +333,7 @@ This assignment asked me to replicate a swing arm part from a set of drawings. T
 
 ### Reflection
 
-The assignment wasn't hard at all, numpy works wonders, It's litterally made for this assignment (or making lists). At first I was a bit confused on what the assignment was asking for and my code had the text printed horizantally but other than that easy fix, this assignment was quick and fun.
+Creating this part from a drawing was pretty simple due to my past experience with tracing. However I will say that it's not the easiest to create something based off a black and white image. Next time, I will spend more time analyzing the drawings before I actually start making the part!
 
 </details>
 
