@@ -353,3 +353,55 @@ N/A
 ### Reflection
 
 The assignment wasn't hard at all, numpy works wonders, It's litterally made for this assignment (or making lists). At first I was a bit confused on what the assignment was asking for and my code had the text printed horizantally but other than that easy fix, this assignment was quick and fun.
+
+</details>
+
+<details><summary>CAD Swing Arm</summary>
+ 
+## String and Loop
+
+### Assignment Description
+	
+For this assignment, We were tasked to make a program that would print out sentences were written out by a user. In this assignmnt I used numpy array with is a function that can be used to make compact lists in certain formats in very quick time. by using it, you can get your code to look really clean, because there isn't that much to do.
+
+
+### Evidence 
+ 
+<details><summary>Code</summary>
+ 
+ ``` python
+ 
+ # Loops and string
+
+# Written by Dylan J. Hensley
+
+
+import numpy 
+
+txt = input("Write somethin' ")
+
+letters = list(txt)
+array1 = numpy.array(letters) # formats letters vertically in a list format
+
+for i in letters:
+    newStr = i.replace(' ', '-')  # instead of space, it a "-"
+    print(newStr)
+ 
+ ```
+</details>
+
+ <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%20(15).png?raw=true">
+
+First type out some sentences,words,phrase, anythings for that matter, and press "enter" then your program will print it out vertically.
+ 
+### Wiring
+
+N/A
+ 
+### Reflection
+
+The assignment wasn't hard at all, numpy works wonders, It's litterally made for this assignment (or making lists). At first I was a bit confused on what the assignment was asking for and my code had the text printed horizantally but other than that easy fix, this assignment was quick and fun.
+
+</details>
+
+
