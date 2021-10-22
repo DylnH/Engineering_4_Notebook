@@ -319,36 +319,6 @@ This assignment asked me to replicate a swing arm part from a set of drawings. T
 
 ### Evidence 
  
-<details><summary>Code</summary>
- 
- ``` python
- 
- # Loops and string
-
-# Written by Dylan J. Hensley
-
-
-import numpy 
-
-txt = input("Write somethin' ")
-
-letters = list(txt)
-array1 = numpy.array(letters) # formats letters vertically in a list format
-
-for i in letters:
-    newStr = i.replace(' ', '-')  # instead of space, it a "-"
-    print(newStr)
- 
- ```
-</details>
-
- <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%20(15).png?raw=true">
-
-First type out some sentences,words,phrase, anythings for that matter, and press "enter" then your program will print it out vertically.
- 
-### Wiring
-
-N/A
  
 ### Reflection
 
@@ -367,36 +337,6 @@ For this assignment, We were tasked to make a program that would print out sente
 
 ### Evidence 
  
-<details><summary>Code</summary>
- 
- ``` python
- 
- # Loops and string
-
-# Written by Dylan J. Hensley
-
-
-import numpy 
-
-txt = input("Write somethin' ")
-
-letters = list(txt)
-array1 = numpy.array(letters) # formats letters vertically in a list format
-
-for i in letters:
-    newStr = i.replace(' ', '-')  # instead of space, it a "-"
-    print(newStr)
- 
- ```
-</details>
-
- <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%20(15).png?raw=true">
-
-First type out some sentences,words,phrase, anythings for that matter, and press "enter" then your program will print it out vertically.
- 
-### Wiring
-
-N/A
  
 ### Reflection
 
