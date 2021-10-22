@@ -314,7 +314,7 @@ The assignment wasn't hard at all, numpy works wonders, It's litterally made for
 
 ### Assignment Description
 	
-For this assignment, We were tasked to make a program that would print out sentences were written out by a user. In this assignmnt I used numpy array with is a function that can be used to make compact lists in certain formats in very quick time. by using it, you can get your code to look really clean, because there isn't that much to do.
+This assignment asked me to replicate a swing arm part from a set of drawings. The assignment style is similar to a portion of the Onshape Associate Certification test.
 
 
 ### Evidence 
