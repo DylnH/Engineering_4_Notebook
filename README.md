@@ -316,10 +316,13 @@ The assignment wasn't hard at all, numpy works wonders, It's litterally made for
 	
 This assignment asked me to replicate a swing arm part from a set of drawings. The assignment style is similar to a portion of the Onshape Associate Certification test.
 
-
 ### Evidence 
- 
- 
+
+#### Configuration #1
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-21%2011.36.42%20PM.png?raw=true">
+#### Configuration #2
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-21%2011.37.15%20PM.png?raw=true">
+
 ### Reflection
 
 The assignment wasn't hard at all, numpy works wonders, It's litterally made for this assignment (or making lists). At first I was a bit confused on what the assignment was asking for and my code had the text printed horizantally but other than that easy fix, this assignment was quick and fun.
