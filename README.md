@@ -356,7 +356,7 @@ The assignment wasn't hard at all, numpy works wonders, It's litterally made for
 
 </details>
 
-<details><summary>CAD Swing Arm</summary>
+<details><summary>CAD Skateboard</summary>
  
 ## String and Loop
 
