@@ -319,8 +319,12 @@ This assignment asked me to replicate a swing arm part from a set of drawings. T
 ### Evidence 
 
 #### Configuration #1
+	
 <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-21%2011.36.42%20PM.png?raw=true">
+	
+	
 #### Configuration #2
+	
 <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-21%2011.37.15%20PM.png?raw=true">
 
 ### Reflection
