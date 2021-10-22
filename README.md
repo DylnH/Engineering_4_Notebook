@@ -310,7 +310,7 @@ The assignment wasn't hard at all, numpy works wonders, It's litterally made for
 	
 <details><summary>CAD Swing Arm</summary>
  
-## String and Loop
+## CAD Swing Arm
 
 ### Assignment Description
 	
@@ -339,15 +339,20 @@ Creating this part from a drawing was pretty simple due to my past experience wi
 
 <details><summary>CAD Skateboard</summary>
  
-## String and Loop
+## CAD Skateboard
 
 ### Assignment Description
 	
-For this assignment, We were tasked to make a program that would print out sentences were written out by a user. In this assignmnt I used numpy array with is a function that can be used to make compact lists in certain formats in very quick time. by using it, you can get your code to look really clean, because there isn't that much to do.
+For this assignment, We were tasked to make a skateboard in a step by step format. We created every part, the deck, the trucks, the wheels, bearings, and hardware. This was really fun to work on and will help you build up certain skills like using the hole tools, split and moving faces, and how to edit preexisting parts.
 
 
 ### Evidence 
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-21%2011.40.38%20PM.png?raw=true">
+
  
+#### Links
+	
+[SkateBoard](https://cvilleschools.onshape.com/documents/d5ff6f7a97309cc405ae1018/w/6e7e7d22ebda895d6140c3e2/e/a68ca3ee1887abae4454c96c)
  
 ### Reflection
 
