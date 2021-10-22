@@ -378,7 +378,7 @@ For this assignment, We were tasked to make a skateboard in a step by step forma
  
 ### Reflection
 
-The assignment wasn't hard at all, numpy works wonders, It's litterally made for this assignment (or making lists). At first I was a bit confused on what the assignment was asking for and my code had the text printed horizantally but other than that easy fix, this assignment was quick and fun.
+This assignment was more fun than anything. I didn't learn that much of anything with this one however it's always good to practice. If you want to do this project, use this [Link]( https://cvilleschools.onshape.com/documents/ce5ac8909ec93f2ab937afda/w/77af2f4715cd6b9dc0f3d968/e/1cf175a4a9e7faeb7db52e25). This will give a complete step-by-step process created by Dorctor Shields. I will say, if you complete the harder truck design, you'll notice that the trucks and wheels are way closer to the deck than a normal skateboard. It bothered me a bit so I just tweaked the design a bit, plus adding riser pads.
 
 </details>
 
