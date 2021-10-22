@@ -347,9 +347,31 @@ For this assignment, We were tasked to make a skateboard in a step by step forma
 
 
 ### Evidence 
+
+<details><summary>Images</summary>
+
+#### Deck
+	
 <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-21%2011.40.38%20PM.png?raw=true">
+	
+#### Trucks
+	
 <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/jbnjnjn.png?raw=true" alt="jbnjnjn.png"/>
- 
+	
+#### Wheel
+	
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-21%2011.39.18%20PM.png?raw=true">
+	
+#### Bearing
+	
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-21%2011.39.36%20PM.png?raw=true">
+	
+#### Complete Skateboard
+	
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-21%2011.41.56%20PM.png?raw=true">
+
+ </details>
+
 #### Links
 	
 [SkateBoard](https://cvilleschools.onshape.com/documents/d5ff6f7a97309cc405ae1018/w/6e7e7d22ebda895d6140c3e2/e/a68ca3ee1887abae4454c96c)
