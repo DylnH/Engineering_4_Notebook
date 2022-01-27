@@ -453,3 +453,75 @@ I didn't any help with this assignment
 This Assignment was pretty simple. LED control is one of the most simple things to do in the world of coding. In this assignment, your basically just toggling to outputs of each LED. I had no issues with this assignment.
 	
 </details>
+
+<details><summary>RPi Safe Shutdown Button</summary>
+ 
+## RPi Safe Shutdown Button
+
+### Assignment Description
+	
+For this assignment. If you press a button momentarily, the Pi will reboot and if you Hold down the button for about 3 seconds the Pi will shutdown.This python script takes advantage of the Qwiic pHat v2.0's built-in general purpose button to safely reboot/shutdown you Pi
+
+### Evidence 
+
+<details><summary>Code</summary>
+ 
+ ``` python
+
+# For the assignment, you only needed to use 1 LED but I wanted to add a little spice to it and used more.
+	
+import RPi.GPIO as GPIO
+import time
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+b = [26] # pin set up for blue LED
+y = [20] # pin set up for yellow LED
+g = [19] # pin set up for green LED
+r = [21] # pin set up for red LED
+GPIO.setup(b, GPIO.OUT)
+GPIO.setup(y, GPIO.OUT)
+GPIO.setup(g, GPIO.OUT)
+GPIO.setup(r, GPIO.OUT)
+while True:
+	GPIO.output(b, 1) # Blue on, every other LED off
+	GPIO.output(y, 0)
+	GPIO.output(g, 0)
+	GPIO.output(r, 0)
+	time.sleep(0.08) # space between LED's blinking
+	GPIO.output(b, 0) # Yellow on, every other LED off
+	GPIO.output(y, 1)
+	GPIO.output(g, 0)
+	GPIO.output(r, 0)
+	time.sleep(0.08) # space between LED's blinking
+	GPIO.output(b, 0) # Red on, every other LED off
+	GPIO.output(y, 0)
+	GPIO.output(g, 0)
+	GPIO.output(r, 1)
+	time.sleep(0.08) # space between LED's blinking
+	GPIO.output(b, 0) # Green on, every other LED off
+	GPIO.output(y, 0)
+	GPIO.output(g, 1)
+	GPIO.output(r, 0)
+	time.sleep(0.08) # space between LED's blinking
+ 
+ ```
+</details>
+	
+#### Picture
+	
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/ezgif.com-gif-maker.gif?raw=true">
+	
+#### Wiring
+
+All you need to know is [how to wire a LED](https://www.electronicshub.org/how-to-blink-an-led-using-raspberry-pi-and-python/). Just do it 4 times
+	
+#### Links
+
+I didn't any help with this assignment
+
+### Reflection
+
+This Assignment was pretty simple. LED control is one of the most simple things to do in the world of coding. In this assignment, your basically just toggling to outputs of each LED. I had no issues with this assignment.
+	
+</details>
