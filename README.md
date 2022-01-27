@@ -450,6 +450,6 @@ I didn't any help with this assignment
 
 ### Reflection
 
-This Assignment was pretty simple. 
+This Assignment was pretty simple. LED control is one of the most simple things to do in the world of coding. In this assignment, your basically just toggling to outputs of each LED. I had no issues with this assignment.
 	
 </details>
