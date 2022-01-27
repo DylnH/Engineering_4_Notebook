@@ -468,42 +468,61 @@ For this assignment. If you press a button momentarily, the Pi will reboot and i
  
  ``` python
 
-# For the assignment, you only needed to use 1 LED but I wanted to add a little spice to it and used more.
-	
-import RPi.GPIO as GPIO
 import time
+import RPi.GPIO as GPIO # from https://pypi.org/project/RPi.GPIO/
 
-GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
-b = [26] # pin set up for blue LED
-y = [20] # pin set up for yellow LED
-g = [19] # pin set up for green LED
-r = [21] # pin set up for red LED
-GPIO.setup(b, GPIO.OUT)
-GPIO.setup(y, GPIO.OUT)
-GPIO.setup(g, GPIO.OUT)
-GPIO.setup(r, GPIO.OUT)
+reset_shutdown_pin = 26 # pin setup
+GPIO.setwarnings(False) # Suppress warnings
+GPIO.setmode(GPIO.BCM) # GPIO numbering for pins
+
+GPIO.setup(reset_shutdown_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+
+# Use Qwiic pHAT's pullup resistor so that the pin is not floating
+#GPIO.setup(reset_shutdown_pin, GPIO.IN)
+
+# modular function to restart Pi
+def restart():
+    print("restarting Pi")
+    command = "/usr/bin/sudo /sbin/shutdown -r now"
+    import subprocess
+    process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+    output = process.communicate()[0]
+    print(output)
+
+# modular function to shutdown Pi
+def shut_down():
+    print("shutting down")
+    command = "/usr/bin/sudo /sbin/shutdown -h now"
+    import subprocess
+    process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+    output = process.communicate()[0]
+    print(output)
+
+
+
+
 while True:
-	GPIO.output(b, 1) # Blue on, every other LED off
-	GPIO.output(y, 0)
-	GPIO.output(g, 0)
-	GPIO.output(r, 0)
-	time.sleep(0.08) # space between LED's blinking
-	GPIO.output(b, 0) # Yellow on, every other LED off
-	GPIO.output(y, 1)
-	GPIO.output(g, 0)
-	GPIO.output(r, 0)
-	time.sleep(0.08) # space between LED's blinking
-	GPIO.output(b, 0) # Red on, every other LED off
-	GPIO.output(y, 0)
-	GPIO.output(g, 0)
-	GPIO.output(r, 1)
-	time.sleep(0.08) # space between LED's blinking
-	GPIO.output(b, 0) # Green on, every other LED off
-	GPIO.output(y, 0)
-	GPIO.output(g, 1)
-	GPIO.output(r, 0)
-	time.sleep(0.08) # space between LED's blinking
+    time.sleep(0.5) # delay
+    
+    channel = GPIO.wait_for_edge(reset_shutdown_pin, GPIO.FALLING, bouncetime=200) # for safe shutdown/reboot
+
+    if channel is None:
+        print('Timeout occurred')
+    else:
+        print('Edge detected on channel', channel)
+
+        # For troubleshooting
+        counter = 0
+
+        while GPIO.input(reset_shutdown_pin) == False:
+            # For troubleshooting
+            counter += 1 # if button pressed for a moment, reboot
+            time.sleep(0.5)
+
+            if counter > 3: # if button press greater than 3 sec, shutdown
+                shut_down()
+
+        restart() # restart (short button press only)
  
  ```
 </details>
