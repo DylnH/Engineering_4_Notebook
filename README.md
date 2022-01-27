@@ -382,4 +382,33 @@ This assignment was more fun than anything. I didn't learn that much of anything
 
 </details>
 
+<details><summary>CAD Swing Arm</summary>
+ 
+## CAD Swing Arm
+
+### Assignment Description
+	
+This assignment asked me to replicate a swing arm part from a set of drawings. The assignment style is similar to a portion of the Onshape Associate Certification test.
+
+### Evidence 
+
+#### Configuration #1
+	
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-21%2011.36.42%20PM.png?raw=true">
+	
+	
+#### Configuration #2
+	
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-21%2011.37.15%20PM.png?raw=true">
+	
+#### Links
+
+[Swing Arm Link](https://cvilleschools.onshape.com/documents/5ce46cef149ffc7d33da91cc/w/8b3d52efd11c982e6632a7d7/e/8e3422795aa742f79d0cd294)
+
+### Reflection
+
+Creating this part from a drawing was pretty simple due to my past experience with tracing. However I will say that it's not the easiest to create something based off a black and white image. Next time, I will spend more time analyzing the drawings before I actually start making the part!
+
+</details>
+
 
