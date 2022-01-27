@@ -436,9 +436,13 @@ while True:
  ```
 </details>
 	
-#### Configuration #2
+#### Picture
 	
 <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/ezgif.com-gif-maker.gif?raw=true">
+	
+#### Wiring
+
+All you need to know is [how to wire a LED](https://www.electronicshub.org/how-to-blink-an-led-using-raspberry-pi-and-python/). Just do it 4 times
 	
 #### Links
 
@@ -446,6 +450,6 @@ I didn't any help with this assignment
 
 ### Reflection
 
-
+This Assignment was pretty simple. 
 	
 </details>
