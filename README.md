@@ -395,45 +395,46 @@ For this assignment. we coded a LED to remotely blink an LED on and off with our
 <details><summary>Code</summary>
  
  ``` python
- 
+
+# For the assignment, you only needed to use 1 LED but I wanted to add a little spice to it and used more.
+	
 import RPi.GPIO as GPIO
 import time
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
-b = [26]
-y = [20]
-g = [19]
-r = [21]
+b = [26] # pin set up for blue LED
+y = [20] # pin set up for yellow LED
+g = [19] # pin set up for green LED
+r = [21] # pin set up for red LED
 GPIO.setup(b, GPIO.OUT)
 GPIO.setup(y, GPIO.OUT)
 GPIO.setup(g, GPIO.OUT)
 GPIO.setup(r, GPIO.OUT)
 while True:
-	GPIO.output(b, 1)
+	GPIO.output(b, 1) # Blue on, every other LED off
 	GPIO.output(y, 0)
 	GPIO.output(g, 0)
 	GPIO.output(r, 0)
-	time.sleep(0.08)
-	GPIO.output(b, 0)
+	time.sleep(0.08) # space between LED's blinking
+	GPIO.output(b, 0) # Yellow on, every other LED off
 	GPIO.output(y, 1)
 	GPIO.output(g, 0)
 	GPIO.output(r, 0)
-	time.sleep(0.08)
-	GPIO.output(b, 0)
+	time.sleep(0.08) # space between LED's blinking
+	GPIO.output(b, 0) # Red on, every other LED off
 	GPIO.output(y, 0)
 	GPIO.output(g, 0)
 	GPIO.output(r, 1)
-	time.sleep(0.08)
-	GPIO.output(b, 0)
+	time.sleep(0.08) # space between LED's blinking
+	GPIO.output(b, 0) # Green on, every other LED off
 	GPIO.output(y, 0)
 	GPIO.output(g, 1)
 	GPIO.output(r, 0)
-	time.sleep(0.08)
+	time.sleep(0.08) # space between LED's blinking
  
  ```
 </details>
-	
 	
 #### Configuration #2
 	
@@ -441,10 +442,10 @@ while True:
 	
 #### Links
 
-[Swing Arm Link](https://cvilleschools.onshape.com/documents/5ce46cef149ffc7d33da91cc/w/8b3d52efd11c982e6632a7d7/e/8e3422795aa742f79d0cd294)
+I didn't any help with this assignment
 
 ### Reflection
 
-Creating this part from a drawing was pretty simple due to my past experience with tracing. However I will say that it's not the easiest to create something based off a black and white image. Next time, I will spend more time analyzing the drawings before I actually start making the part!
 
+	
 </details>
