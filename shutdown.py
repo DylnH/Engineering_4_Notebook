@@ -1,17 +1,9 @@
 import time
-import RPi.GPIO as GPIO #Python Package Reference: https://pypi.org/project/RPi.GPIO/
+import RPi.GPIO as GPIO # from https://pypi.org/project/RPi.GPIO/
 
-# Pin definition
-reset_shutdown_pin = 26
-
-# Suppress warnings
-GPIO.setwarnings(False)
-
-# Use "GPIO" pin numbering
-GPIO.setmode(GPIO.BCM)
-
-# Use built-in internal pullup resistor so the pin is not floating
-# if using a momentary push button without a resistor.
+reset_shutdown_pin = 26 # pin setup
+GPIO.setwarnings(False) # Suppress warnings
+GPIO.setmode(GPIO.BCM) # GPIO numbering for pins
 
 GPIO.setup(reset_shutdown_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
@@ -40,31 +32,24 @@ def shut_down():
 
 
 while True:
-    #short delay, otherwise this code will take up a lot of the Pi's processing power
-    time.sleep(0.5)
-
-    # wait for a button press with switch debounce on the falling edge so that this script
-    # is not taking up too many resources in order to shutdown/reboot the Pi safely
-    channel = GPIO.wait_for_edge(reset_shutdown_pin, GPIO.FALLING, bouncetime=200)
+    time.sleep(0.5) # delay
+    
+    channel = GPIO.wait_for_edge(reset_shutdown_pin, GPIO.FALLING, bouncetime=200) # for safe shutdown/reboot
 
     if channel is None:
         print('Timeout occurred')
     else:
         print('Edge detected on channel', channel)
 
-        # For troubleshooting, uncomment this line to output button status on command line
-        #print('GPIO state is = ', GPIO.input(reset_shutdown_pin))
+        # For troubleshooting
         counter = 0
 
         while GPIO.input(reset_shutdown_pin) == False:
-            # For troubleshooting, uncomment this line to view the counter. If it reaches a value above 4, we will restart.
-            #print(counter)
-            counter += 1
+            # For troubleshooting
+            counter += 1 # if button pressed for a moment, reboot
             time.sleep(0.5)
 
-            # long button press
-            if counter > 4:
+            if counter > 3: # if button press greater than 3 sec, shutdown
                 shut_down()
 
-        #if short button press, restart!
-        restart()
+        restart() # restart (short button press only)
