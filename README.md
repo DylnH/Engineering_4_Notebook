@@ -437,7 +437,7 @@ while True:
 	
 #### Configuration #2
 	
-<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/Screenshot%202021-10-21%2011.37.15%20PM.png?raw=true">
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/ezgif.com-gif-maker.gif?raw=true">
 	
 #### Links
 
