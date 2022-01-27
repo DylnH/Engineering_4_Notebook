@@ -382,13 +382,13 @@ This assignment was more fun than anything. I didn't learn that much of anything
 
 </details>
 
-<details><summary>CAD Swing Arm</summary>
+<details><summary>RPi GPIO Pin Introduction</summary>
  
-## CAD Swing Arm
+## RPi GPIO Pin Introduction
 
 ### Assignment Description
 	
-This assignment asked me to replicate a swing arm part from a set of drawings. The assignment style is similar to a portion of the Onshape Associate Certification test.
+For this assignment. we coded a LED to remotely blink an LED on and off with our pi and a T Cobbler.
 
 ### Evidence 
 
