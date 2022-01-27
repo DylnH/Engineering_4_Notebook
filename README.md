@@ -515,7 +515,6 @@ while True:
         counter = 0
 
         while GPIO.input(reset_shutdown_pin) == False:
-            # For troubleshooting
             counter += 1 # if button pressed for a moment, reboot
             time.sleep(0.5)
 
