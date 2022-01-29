@@ -528,7 +528,7 @@ while True:
 	
 #### Picture
 	
-<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/ezgif.com-gif-maker.gif?raw=true">
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/ezgif.com-gif-maker%20(1).gif?raw=true">
 	
 #### Wiring
 
