@@ -540,6 +540,6 @@ No wiring needed, It just wiring a button. Easy google search.
 
 ### Reflection
 
-This Assignment was pretty simple. LED control is one of the most simple things to do in the world of coding. In this assignment, your basically just toggling to outputs of each LED. I had no issues with this assignment.
+This Assignment was a bit annoy due to slightly modifying preexisting code over and over, aswell as having to wait if the pi rebooted or shut down to see if a did the assignment correctly. Despite that, modifying other persons code is a good skill to have.
 	
 </details>
