@@ -532,11 +532,11 @@ while True:
 	
 #### Wiring
 
-All you need to know is [how to wire a LED](https://www.electronicshub.org/how-to-blink-an-led-using-raspberry-pi-and-python/). Just do it 4 times
+No wiring needed, It just wiring a button. Easy google search.	
 	
 #### Links
 
-I didn't any help with this assignment
+[This](https://learn.sparkfun.com/tutorials/raspberry-pi-safe-reboot-and-shutdown-button/all) helped my out with the assignment.
 
 ### Reflection
 
