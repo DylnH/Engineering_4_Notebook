@@ -702,6 +702,8 @@ while True:
 
 ### Reflection
 
-In This Assignment, I learned how to prints out the accelerometer values and how to use the LCD screen. Also, the accelerometer could be used in our pi in the sky project to track data.
+In This Assignment, the main thing I learned was how to run a script on the pi without having to be connected to the computer. I got a little stuck on this assignment, but with the help of the internet and my fellow classmates, I was able to get this done. 
+
+
 	
 </details>
