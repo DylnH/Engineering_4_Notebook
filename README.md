@@ -620,6 +620,6 @@ while True:
 
 ### Reflection
 
-This Assignment was a bit annoy due to slightly modifying preexisting code over and over, aswell as having to wait if the pi rebooted or shut down to see if a did the assignment correctly. Despite that, modifying other persons code is a good skill to have.
+In This Assignment, I learned how to prints out the accelerometer values and how to use the LCD screen. Also, the accelerometer could be used in our pi in the sky project to track data.
 	
 </details>
