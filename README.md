@@ -559,59 +559,49 @@ For this assignment. If you press a button momentarily, the Pi will reboot and i
  ``` python
 
 import time
-import RPi.GPIO as GPIO # from https://pypi.org/project/RPi.GPIO/
+import Adafruit_GPIO.SPI as SPI
+import Adafruit_SSD1306
+import Adafruit_LSM303
+from PIL import Image
+from PIL import ImageDraw
+from PIL import ImageFont
 
-reset_shutdown_pin = 26 # pin setup
-GPIO.setwarnings(False) # Suppress warnings
-GPIO.setmode(GPIO.BCM) # GPIO numbering for pins
+RST = 26 #Pins
+DC = 23
+SPI_PORT = 0
+SPI_DEVICE = 0
 
-GPIO.setup(reset_shutdown_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+# LSM303, Library, Display
+lsm303 = Adafruit_LSM303.LSM303()
+disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
 
-# Use Qwiic pHAT's pullup resistor so that the pin is not floating
-#GPIO.setup(reset_shutdown_pin, GPIO.IN)
+disp.begin()
+disp.clear()
+disp.display()
 
-# modular function to restart Pi
-def restart():
-    print("restarting Pi")
-    command = "/usr/bin/sudo /sbin/shutdown -r now"
-    import subprocess
-    process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
-    output = process.communicate()[0]
-    print(output)
-
-# modular function to shutdown Pi
-def shut_down():
-    print("shutting down")
-    command = "/usr/bin/sudo /sbin/shutdown -h now"
-    import subprocess
-    process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
-    output = process.communicate()[0]
-    print(output)
-
-
-
+width = disp.width
+height = disp.height
+image = Image.new('1', (width, height))
+draw = ImageDraw.Draw(image)
+font = ImageFont.load_default()
 
 while True:
-    time.sleep(0.5) # delay
-    
-    channel = GPIO.wait_for_edge(reset_shutdown_pin, GPIO.FALLING, bouncetime=200) # for safe shutdown/reboot
-
-    if channel is None:
-        print('Timeout occurred')
-    else:
-        print('Edge detected on channel', channel)
-
-        # For troubleshooting
-        counter = 0
-
-        while GPIO.input(reset_shutdown_pin) == False:
-            counter += 1 # if button pressed for a moment, reboot
-            time.sleep(0.5)
-
-            if counter > 3: # if button press greater than 3 sec, shutdown
-                shut_down()
-
-        restart() # restart (short button press only)
+    # For black clear image
+    draw.rectangle((0,0,width,height), outline=0, fill=0)
+    # Read/Print X, Y, Z
+    accel, mag = lsm303.read()
+    # Grab the X, Y, Z components; read/print
+    accel_x, accel_y, accel_z = accel
+    mag_x, mag_y, mag_z = mag
+    print('Accel X={0}, Accel Y={1}, Accel Z={2}, Mag X={3}, Mag Y={4}, Mag Z={5}'.format(
+          accel_x, accel_y, accel_z, mag_x, mag_y, mag_z))
+    draw.text((0, 0),     ("x: " + str(accel_x)),  font=font, fill=255)
+    draw.text((0, 25),    ("y: " + str(accel_y)),  font=font, fill=255)
+    draw.text((0, 50),    ("z: " + str(accel_z)),  font=font, fill=255)
+    # 1/4 sec repeat
+    disp.image(image)
+    disp.display()
+    time.sleep(0.25)
  
  ```
 </details>
