@@ -618,11 +618,10 @@ while True:
 	
 #### Picture
 	
-<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/ezgif.com-gif-maker%20(1).gif?raw=true">
 	
 #### Wiring
 
-No wiring needed, It just wiring a button. Easy google search.	
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/GPINS.png?raw=true">
 	
 #### Links
 
