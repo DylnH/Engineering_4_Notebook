@@ -698,7 +698,7 @@ while True:
 	
 #### Links
 
-[This](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/)
+[This](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/) helped me with the assignment
 
 ### Reflection
 
