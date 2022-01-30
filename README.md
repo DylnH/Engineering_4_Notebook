@@ -630,7 +630,7 @@ In This Assignment, I learned how to prints out the accelerometer values and how
 
 ### Assignment Description
 	
-For this assignment, we had to used an accelerometer and a LCD screen. We merged two pieces of preexisting code to display the X, Y, & Z accelerations on the screen. We also used These libraries → [SSD1306,](https://github.com/DylnH/Engineering_4_Notebook/tree/main/Adafruit_Python_SSD1306) [LSM303](https://github.com/DylnH/Engineering_4_Notebook/tree/main/Adafruit_Python_LSM303)
+For this assignment, we created a dot that moves on the LCD display based off of values gathered by an accelerometer and it can run whenever the pi boots, or whenever it has power.
 
 ### Evidence 
 
@@ -645,7 +645,7 @@ from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
 
-RST = 24
+RST = 26
 LSM = Adafruit_LSM303.LSM303() # accelerometer setup
 
 # SSD setup
@@ -672,15 +672,12 @@ while True:
 	accel_x, accel_y, accel_z = accel
 	mag_x, mag_y, mag_z = mag
 	
-	# these lines get the x and y position for the dot based on the accelerometer values, more info on these in the readme
+	# these lines get the x and y position for the dot based on the accelerometer values
 	x_pos = 64 - (accel_y / 100) / 15 * 128
 	y_pos = 32 - (accel_x / 100) / 15 * 64 
 		
 	#print(x_pos, y_pos)
-	# if you uncomment this line, you can see that when the accelerometer is in a neutral position,
-	# the x and y position values hover around 63 and 33, which is extremely close to dead center
-
-	draw.ellipse((x_pos - radius, y_pos - radius, x_pos + radius, y_pos + radius), outline=255, fill=255) # draws the dot that moves around
+	draw.ellipse((x_pos - radius, y_pos - radius, x_pos + radius, y_pos + radius), outline=255, fill=255) # draws dot
 	
 	SSD.image(image)
 	SSD.display() # displays the dot
@@ -696,7 +693,8 @@ while True:
 
 <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/GPINS.png?raw=true" height="350px">
 
-* I didn't have to change the wiring. you can use the same wiring you used for GPIO Pins - I2C
+* I didn't have to change the wiring. you can use the same wiring you used for GPIO Pins - I2C.
+* made the sme typo, change the code to reflect the wiring diagram.
 	
 #### Links
 
