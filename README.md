@@ -550,7 +550,7 @@ This Assignment was a bit annoy due to slightly modifying preexisting code over 
 
 ### Assignment Description
 	
-For this assignment. If you press a button momentarily, the Pi will reboot and if you Hold down the button for about 3 seconds the Pi will shutdown.This python script takes advantage of the Qwiic pHat v2.0's built-in general purpose button to safely reboot/shutdown you Pi
+For this assignment, we had to used an accelerometer and a LCD screen. We merged two pieces of preexisting code to display the X, Y, & Z accelerations on the screen.
 
 ### Evidence 
 
