@@ -550,7 +550,7 @@ This Assignment was a bit annoy due to slightly modifying preexisting code over 
 
 ### Assignment Description
 	
-For this assignment, we had to used an accelerometer and a LCD screen. We merged two pieces of preexisting code to display the X, Y, & Z accelerations on the screen. We also used These libraries → [SSD1306](https://github.com/DylnH/Engineering_4_Notebook/tree/main/Adafruit_Python_SSD1306) [LSM303](https://github.com/DylnH/Engineering_4_Notebook/tree/main/Adafruit_Python_LSM303)
+For this assignment, we had to used an accelerometer and a LCD screen. We merged two pieces of preexisting code to display the X, Y, & Z accelerations on the screen. We also used These libraries → [SSD1306,](https://github.com/DylnH/Engineering_4_Notebook/tree/main/Adafruit_Python_SSD1306) [LSM303](https://github.com/DylnH/Engineering_4_Notebook/tree/main/Adafruit_Python_LSM303)
 
 ### Evidence 
 
