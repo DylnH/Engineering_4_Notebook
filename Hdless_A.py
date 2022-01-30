@@ -7,29 +7,29 @@ from PIL import ImageDraw
 from PIL import ImageFont
 
 RST = 24
-accelerometer = Adafruit_LSM303.LSM303() # accelerometer setup
+LSM = Adafruit_LSM303.LSM303() # accelerometer setup
 
-# display setup
-disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
-disp.begin()
-disp.clear()
-disp.display()
-width = disp.width
-height = disp.height 
+# SSD setup
+SSD = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
+SSD.begin()
+SSD.clear()
+SSD.display()
+width = SSD.width
+height = SSD.height 
 image = Image.new('1', (width, height))
 
 draw = ImageDraw.Draw(image) # gets drawing object to draw on image
 draw.rectangle((0,0,width,height), outline=0, fill=0) # draws black rectangle on screen
 font = ImageFont.load_default()
 
-disp.image(image)
-disp.display() # clears screen
+SSD.image(image)
+SSd.display() # clears screen
 
 radius = 5
 
 while True:
 	draw.rectangle((0, 0, width, height), outline=0, fill=0) # draws black rectangle on screen
-	accel, mag = accelerometer.read() # gets accelerometer data
+	accel, mag = LSM.read() # gets accelerometer data
 	accel_x, accel_y, accel_z = accel
 	mag_x, mag_y, mag_z = mag
 	
@@ -43,5 +43,5 @@ while True:
 
 	draw.ellipse((x_pos - radius, y_pos - radius, x_pos + radius, y_pos + radius), outline=255, fill=255) # draws the dot that moves around
 	
-	disp.image(image)
-	disp.display() # displays the dot
+	SSD.image(image)
+	SSD.display() # displays the dot
