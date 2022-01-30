@@ -543,3 +543,5 @@ No wiring needed, It just wiring a button. Easy google search.
 This Assignment was a bit annoy due to slightly modifying preexisting code over and over, aswell as having to wait if the pi rebooted or shut down to see if a did the assignment correctly. Despite that, modifying other persons code is a good skill to have.
 	
 </details>
+GPIO Pins - I2C
+
