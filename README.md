@@ -698,7 +698,7 @@ while True:
 	
 #### Links
 
-[This](https://raspberrypi.stackexchange.com/questions/61396/how-to-write-string-and-variables-on-lcd-with-lcd-string) helped my out with the assignment.
+[This](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/)
 
 ### Reflection
 
