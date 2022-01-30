@@ -686,13 +686,13 @@ while True:
 	
 #### Picture
 	
-<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/pins.jpg?raw=true" height="325px">
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/hla.gif?raw=true">
 
 #### Wiring
 
 <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/GPINS.png?raw=true" height="350px">
 
-* I made a typo on the diagram. I wrote down pin 26 when I actually used pin 24, however it doesn't really matter what pin you use. I edited the code to reflect the diagram though.
+* I didn't have to change the wiring. you can use the same wiring you used for GPIO Pins - I2C
 	
 #### Links
 
