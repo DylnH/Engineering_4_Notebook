@@ -618,7 +618,7 @@ while True:
 	
 #### Links
 
-[This](https://learn.sparkfun.com/tutorials/raspberry-pi-safe-reboot-and-shutdown-button/all) helped my out with the assignment.
+[This](https://raspberrypi.stackexchange.com/questions/61396/how-to-write-string-and-variables-on-lcd-with-lcd-string) helped my out with the assignment.
 
 ### Reflection
 
