@@ -618,7 +618,7 @@ while True:
 	
 #### Picture
 	
-<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/pins.jpg?raw=true">
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/pins.jpg?raw=true" height="500px" width="500">
 
 #### Wiring
 
