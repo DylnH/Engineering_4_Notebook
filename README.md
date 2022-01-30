@@ -641,7 +641,6 @@ For this assignment, we had to used an accelerometer and a LCD screen. We merged
 import time
 import Adafruit_SSD1306
 import Adafruit_LSM303
-
 from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
