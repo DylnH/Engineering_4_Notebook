@@ -469,7 +469,7 @@ For this assignment. If you press a button momentarily, the Pi will reboot and i
  ``` python
 
 import time
-import RPi.GPIO as GPIO # from https://pypi.org/project/RPi.GPIO/
+import RPi.GPIO as GPIO
 
 reset_shutdown_pin = 26 # pin setup
 GPIO.setwarnings(False) # Suppress warnings
