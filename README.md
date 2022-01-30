@@ -639,54 +639,59 @@ For this assignment, we had to used an accelerometer and a LCD screen. We merged
  ``` python
 
 import time
-import Adafruit_GPIO.SPI as SPI
-import Adafruit_LSM303
 import Adafruit_SSD1306
+import Adafruit_LSM303
+
 from PIL import Image
-from PIL import ImageFont
 from PIL import ImageDraw
+from PIL import ImageFont
 
-RST = 26 #Pins
-DC = 23
-SPI_PORT = 0
-SPI_DEVICE = 0
+RST = 24
+LSM = Adafruit_LSM303.LSM303() # accelerometer setup
 
-# LSM303, Library, Display
-LSM = Adafruit_LSM303.LSM303()
+# SSD setup
 SSD = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
-
 SSD.begin()
 SSD.clear()
 SSD.display()
-
-height = SSD.height
 width = SSD.width
-font = ImageFont.load_default()
-draw = ImageDraw.Draw(image)
+height = SSD.height 
 image = Image.new('1', (width, height))
 
+draw = ImageDraw.Draw(image) # gets drawing object to draw on image
+draw.rectangle((0,0,width,height), outline=0, fill=0) # draws black rectangle on screen
+font = ImageFont.load_default()
+
+SSD.image(image)
+SSd.display() # clears screen
+
+radius = 5
+
 while True:
-    draw.rectangle((0,0,width,height), outline=0, fill=0)     # For black clear image
-    # Read/Print X, Y, Z
-    accel, mag = LSM.read()
-    accel_x, accel_y, accel_z = accel   # Grab the X, Y, Z components; read/print
-    mag_x, mag_y, mag_z = mag
-    print('Accel X={0}, Accel Y={1}, Accel Z={2}, Mag X={3}, Mag Y={4}, Mag Z={5}'.format(
-          accel_x, accel_y, accel_z, mag_x, mag_y, mag_z))
-    draw.text((0, 0),     ("x: " + str(accel_x)),  font=font, fill=255)
-    draw.text((0, 25),    ("y: " + str(accel_y)),  font=font, fill=255)
-    draw.text((0, 50),    ("z: " + str(accel_z)),  font=font, fill=255)
-    # 1/4 sec repeat
-    SSD.image(image)
-    SSD.display()
-    time.sleep(0.25)
+	draw.rectangle((0, 0, width, height), outline=0, fill=0) # draws black rectangle on screen
+	accel, mag = LSM.read() # gets accelerometer data
+	accel_x, accel_y, accel_z = accel
+	mag_x, mag_y, mag_z = mag
+	
+	# these lines get the x and y position for the dot based on the accelerometer values, more info on these in the readme
+	x_pos = 64 - (accel_y / 100) / 15 * 128
+	y_pos = 32 - (accel_x / 100) / 15 * 64 
+		
+	#print(x_pos, y_pos)
+	# if you uncomment this line, you can see that when the accelerometer is in a neutral position,
+	# the x and y position values hover around 63 and 33, which is extremely close to dead center
+
+	draw.ellipse((x_pos - radius, y_pos - radius, x_pos + radius, y_pos + radius), outline=255, fill=255) # draws the dot that moves around
+	
+	SSD.image(image)
+	SSD.display() # displays the dot
  
  ```
 </details>
 	
 #### Picture
 	
-<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/hla.gif?raw=true">
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/hla.gif?raw=true" height="500px">
 
 #### Wiring
 
