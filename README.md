@@ -613,6 +613,7 @@ while True:
 #### Wiring
 
 <img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/GPINS.png?raw=true" height="350px">
+
 * I made a typo on the diagram. I wrote down pin 26 when I actually used pin 24, however it doesn't really matter what pin you use. I edited the code to reflect the diagram though.
 	
 #### Links
