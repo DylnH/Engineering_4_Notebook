@@ -622,7 +622,7 @@ while True:
 
 #### Wiring
 
-<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/GPINS.png?raw=true" height="400px">
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/GPINS.png?raw=true" height="350px">
 	
 #### Links
 
