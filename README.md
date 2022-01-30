@@ -623,3 +623,83 @@ while True:
 In This Assignment, I learned how to prints out the accelerometer values and how to use the LCD screen. Also, the accelerometer could be used in our pi in the sky project to track data.
 	
 </details>
+
+<details><summary>Headless Accelerometer</summary>
+ 
+## Headless Accelerometer
+
+### Assignment Description
+	
+For this assignment, we had to used an accelerometer and a LCD screen. We merged two pieces of preexisting code to display the X, Y, & Z accelerations on the screen. We also used These libraries → [SSD1306,](https://github.com/DylnH/Engineering_4_Notebook/tree/main/Adafruit_Python_SSD1306) [LSM303](https://github.com/DylnH/Engineering_4_Notebook/tree/main/Adafruit_Python_LSM303)
+
+### Evidence 
+
+<details><summary>Code</summary>
+ 
+ ``` python
+
+import time
+import Adafruit_GPIO.SPI as SPI
+import Adafruit_LSM303
+import Adafruit_SSD1306
+from PIL import Image
+from PIL import ImageFont
+from PIL import ImageDraw
+
+RST = 26 #Pins
+DC = 23
+SPI_PORT = 0
+SPI_DEVICE = 0
+
+# LSM303, Library, Display
+LSM = Adafruit_LSM303.LSM303()
+SSD = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
+
+SSD.begin()
+SSD.clear()
+SSD.display()
+
+height = SSD.height
+width = SSD.width
+font = ImageFont.load_default()
+draw = ImageDraw.Draw(image)
+image = Image.new('1', (width, height))
+
+while True:
+    draw.rectangle((0,0,width,height), outline=0, fill=0)     # For black clear image
+    # Read/Print X, Y, Z
+    accel, mag = LSM.read()
+    accel_x, accel_y, accel_z = accel   # Grab the X, Y, Z components; read/print
+    mag_x, mag_y, mag_z = mag
+    print('Accel X={0}, Accel Y={1}, Accel Z={2}, Mag X={3}, Mag Y={4}, Mag Z={5}'.format(
+          accel_x, accel_y, accel_z, mag_x, mag_y, mag_z))
+    draw.text((0, 0),     ("x: " + str(accel_x)),  font=font, fill=255)
+    draw.text((0, 25),    ("y: " + str(accel_y)),  font=font, fill=255)
+    draw.text((0, 50),    ("z: " + str(accel_z)),  font=font, fill=255)
+    # 1/4 sec repeat
+    SSD.image(image)
+    SSD.display()
+    time.sleep(0.25)
+ 
+ ```
+</details>
+	
+#### Picture
+	
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/pins.jpg?raw=true" height="325px">
+
+#### Wiring
+
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/GPINS.png?raw=true" height="350px">
+
+* I made a typo on the diagram. I wrote down pin 26 when I actually used pin 24, however it doesn't really matter what pin you use. I edited the code to reflect the diagram though.
+	
+#### Links
+
+[This](https://raspberrypi.stackexchange.com/questions/61396/how-to-write-string-and-variables-on-lcd-with-lcd-string) helped my out with the assignment.
+
+### Reflection
+
+In This Assignment, I learned how to prints out the accelerometer values and how to use the LCD screen. Also, the accelerometer could be used in our pi in the sky project to track data.
+	
+</details>
