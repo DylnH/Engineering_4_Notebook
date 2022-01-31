@@ -703,7 +703,85 @@ while True:
 ### Reflection
 
 In This Assignment, the main thing I learned was how to run a script on the pi without having to be connected to the computer. I got a little stuck on this assignment, but with the help of the internet and my fellow classmates, I was able to get this done. 
+</details>
 
+<details><summary>Pi Camera</summary>
+ 
+## Pi Camera
 
+### Assignment Description
 	
+For this assignment, we created a dot that moves on the LCD display based off of values gathered by an accelerometer and it can run whenever the pi boots, or whenever it has power.
+
+### Evidence 
+
+<details><summary>Code</summary>
+ 
+ ``` python
+
+import time
+import Adafruit_SSD1306
+import Adafruit_LSM303
+from PIL import Image
+from PIL import ImageDraw
+from PIL import ImageFont
+
+RST = 26
+LSM = Adafruit_LSM303.LSM303() # accelerometer setup
+
+# SSD setup
+SSD = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
+SSD.begin()
+SSD.clear()
+SSD.display()
+width = SSD.width
+height = SSD.height 
+image = Image.new('1', (width, height))
+
+draw = ImageDraw.Draw(image) # gets drawing object to draw on image
+draw.rectangle((0,0,width,height), outline=0, fill=0) # draws black rectangle on screen
+font = ImageFont.load_default()
+
+SSD.image(image)
+SSd.display() # clears screen
+
+radius = 5
+
+while True:
+	draw.rectangle((0, 0, width, height), outline=0, fill=0) # draws black rectangle on screen
+	accel, mag = LSM.read() # gets accelerometer data
+	accel_x, accel_y, accel_z = accel
+	mag_x, mag_y, mag_z = mag
+	
+	# these lines get the x and y position for the dot based on the accelerometer values
+	x_pos = 64 - (accel_y / 100) / 15 * 128
+	y_pos = 32 - (accel_x / 100) / 15 * 64 
+		
+	#print(x_pos, y_pos)
+	draw.ellipse((x_pos - radius, y_pos - radius, x_pos + radius, y_pos + radius), outline=255, fill=255) # draws dot
+	
+	SSD.image(image)
+	SSD.display() # displays the dot
+ 
+ ```
+</details>
+	
+#### Picture
+	
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/hla.gif?raw=true" height="500px">
+
+#### Wiring
+
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/GPINS.png?raw=true" height="350px">
+
+* I didn't have to change the wiring. you can use the same wiring you used for GPIO Pins - I2C.
+* made the sme typo, change the code to reflect the wiring diagram.
+	
+#### Links
+
+[This](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/) helped me with the assignment
+
+### Reflection
+
+In This Assignment, the main thing I learned was how to run a script on the pi without having to be connected to the computer. I got a little stuck on this assignment, but with the help of the internet and my fellow classmates, I was able to get this done. 
 </details>
