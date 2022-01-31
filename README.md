@@ -720,48 +720,37 @@ For this assignment,We used a camera to take 5 photos with 5 different filters, 
  ``` python
 
 import time
-import Adafruit_SSD1306
-import Adafruit_LSM303
-from PIL import Image
-from PIL import ImageDraw
-from PIL import ImageFont
+import picamera
 
-RST = 26
-LSM = Adafruit_LSM303.LSM303() # accelerometer setup
+with picamera.PiCamera() as camera:
+	camera.resolution = (1000, 750)
+	camera.start_preview()
+	time.sleep(1)
 
-# SSD setup
-SSD = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
-SSD.begin()
-SSD.clear()
-SSD.display()
-width = SSD.width
-height = SSD.height 
-image = Image.new('1', (width, height))
-
-draw = ImageDraw.Draw(image) # gets drawing object to draw on image
-draw.rectangle((0,0,width,height), outline=0, fill=0) # draws black rectangle on screen
-font = ImageFont.load_default()
-
-SSD.image(image)
-SSd.display() # clears screen
-
-radius = 5
-
-while True:
-	draw.rectangle((0, 0, width, height), outline=0, fill=0) # draws black rectangle on screen
-	accel, mag = LSM.read() # gets accelerometer data
-	accel_x, accel_y, accel_z = accel
-	mag_x, mag_y, mag_z = mag
-	
-	# these lines get the x and y position for the dot based on the accelerometer values
-	x_pos = 64 - (accel_y / 100) / 15 * 128
-	y_pos = 32 - (accel_x / 100) / 15 * 64 
+	for i in range(5):
+		time.sleep(1)
 		
-	#print(x_pos, y_pos)
-	draw.ellipse((x_pos - radius, y_pos - radius, x_pos + radius, y_pos + radius), outline=255, fill=255) # draws dot
-	
-	SSD.image(image)
-	SSD.display() # displays the dot
+		if i == 0:
+			camera.image_effect = 'colorswap'
+			camera.capture('camera_test_colorswap.jpg')
+		elif i == 1:
+			camera.image_effect = 'negative'
+			camera.capture('camera_test_colorswap.jpg')
+		elif i == 2:
+			camera.image_effect = 'cartoon'
+			camera.capture('camera_test_colorswap.jpg')
+		elif i == 3:
+			camera.image_effect = 'solarize'
+			camera.capture('camera_test_colorswap.jpg')
+		else:
+			camera.image_effect = 'none'
+			camera.capture('camera_test_colorswap.jpg')
+		
+		time.sleep(1)
+		print("Took picture # " + str(i))
+
+camera.stop_preview()
+print("Done")
  
  ```
 </details>
