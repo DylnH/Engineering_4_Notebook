@@ -776,9 +776,9 @@ while True:
 	
 #### Links
 
-These helped me with the assignment. [Picamera](https://picamera.readthedocs.io/en/release-1.10/api_camera.html#picamera.camera.PiCamera.image_effect) [PicameraBasics](https://picamera.readthedocs.io/en/release-1.10/recipes1.html)
+These helped me with the assignment. [Picamera,](https://picamera.readthedocs.io/en/release-1.10/api_camera.html#picamera.camera.PiCamera.image_effect) [PicameraBasics](https://picamera.readthedocs.io/en/release-1.10/recipes1.html)
 
 ### Reflection
-
-In This Assignment, the main thing I learned was how to run a script on the pi without having to be connected to the computer. I got a little stuck on this assignment, but with the help of the internet and my fellow classmates, I was able to get this done. 
+	
+The Coding part was the easy part for this assignment. But I had a devil of a time trying to connect the camera to my pi due to my pi missing the connector piece.
 </details>
