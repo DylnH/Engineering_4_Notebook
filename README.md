@@ -771,3 +771,25 @@ These helped me with the assignment. [Picamera,](https://picamera.readthedocs.io
 	
 The Coding part was the easy part for this assignment. But I had a devil of a time trying to connect the camera to my pi due to my pi missing the connector piece.
 </details>
+
+<details><summary>Copypasta</summary>
+ 
+## Copypasta
+
+### Assignment Description
+	
+For this assignment,We made our own stop motion animation video using a Raspberry Pi, Python and a camera module to take pictures, controlled by a push button connected to the Pi’s GPIO pins.
+
+
+### Evidence 
+
+N/A
+	
+#### Links
+
+[This](https://projects.raspberrypi.org/en/projects/push-button-stop-motion) helped me with the assignment.
+
+### Reflection
+	
+N/A	
+	
