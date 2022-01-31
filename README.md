@@ -711,7 +711,7 @@ In This Assignment, the main thing I learned was how to run a script on the pi w
 
 ### Assignment Description
 	
-For this assignment, we created a dot that moves on the LCD display based off of values gathered by an accelerometer and it can run whenever the pi boots, or whenever it has power.
+For this assignment,We used a camera to take 5 photos with 5 different filters, consecutively.
 
 ### Evidence 
 
@@ -768,14 +768,11 @@ while True:
 	
 #### Picture
 	
-<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/hla.gif?raw=true" height="500px">
-
+	N/A
+	
 #### Wiring
 
-<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/GPINS.png?raw=true" height="350px">
-
-* I didn't have to change the wiring. you can use the same wiring you used for GPIO Pins - I2C.
-* made the sme typo, change the code to reflect the wiring diagram.
+<img src="" height="350px">
 	
 #### Links
 
