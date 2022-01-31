@@ -772,7 +772,7 @@ while True:
 	
 #### Wiring
 
-<img src="" height="350px">
+<img src="https://github.com/DylnH/Engineering_4_Notebook/blob/main/IMG_8794.JPG?raw=true" height="350px">
 	
 #### Links
 
