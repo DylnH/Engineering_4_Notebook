@@ -776,7 +776,7 @@ while True:
 	
 #### Links
 
-[This](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/) helped me with the assignment
+These helped me with the assignment. [Picamera](https://picamera.readthedocs.io/en/release-1.10/api_camera.html#picamera.camera.PiCamera.image_effect) [PicameraBasics](https://picamera.readthedocs.io/en/release-1.10/recipes1.html)
 
 ### Reflection
 
